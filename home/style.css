@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', 'Times New Roman', serif;
+    background-color: #05060d;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Header & Navbar */
+.navbar {
+    background-color: #03040a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.15rem;
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.social-links a:hover {
+    opacity: 1;
+}
+
+.brand-logo h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: #eed69b;
+    text-shadow: 0 0 10px rgba(238, 214, 155, 0.3);
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 4px 8px;
+    margin-right: 8px;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 0.85rem;
+    width: 90px;
+}
+
+.search-box i {
+    font-size: 0.85rem;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1.5px solid #fff;
+    color: #fff;
+}
+
+.btn-solid {
+    background: #5468ff;
+    border: 1.5px solid #5468ff;
+    color: #fff;
+}
+
+.btn-solid:hover {
+    background: #4354df;
+}
+
+/* Secondary Navigation */
+.sub-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sub-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sub-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.sub-nav ul li a:hover,
+.sub-nav ul li a.active {
+    opacity: 1;
+}
+
+.sub-nav ul li a i {
+    font-size: 0.6rem;
+    margin-left: 2px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(ellipse at center, rgba(16, 26, 47, 0.6) 0%, rgba(3, 5, 12, 0.95) 100%),
+        url("https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=2070&auto=format&fit=crop") center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-size: 3.4rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.hero-content h3 {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 24px;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 1.6;
+    opacity: 0.85;
+    margin-bottom: 40px;
+}
+
+/* Bottom Diamond Indicator */
+.scroll-diamond {
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    transform: rotate(45deg);
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #020308;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1300px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 50px 60px;
+    background-color: #03050e;
+}
+
+/* Top Section */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-links-grid {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.link-column a {
+    color: #e0e2ec;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-family: inherit;
+    letter-spacing: 0.5px;
+    opacity: 0.85;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.link-column a:hover {
+    opacity: 1;
+    color: #eed69b;
+}
+
+.footer-logo h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #e5cf96;
+    text-shadow: 0 0 10px rgba(229, 207, 150, 0.2);
+    white-space: nowrap;
+}
+
+/* Divider Line */
+.footer-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.12);
+    margin: 40px 0 35px 0;
+}
+
+/* Bottom Section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-legal-text {
+    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-legal-text .copyright {
+    letter-spacing: 1.5px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #ced3e2;
+    margin-bottom: 4px;
+}
+
+.footer-legal-text p {
+    font-size: 0.76rem;
+    line-height: 1.55;
+    color: #8c93a8;
+    font-weight: 300;
+}
+
+.footer-legal-text strong {
+    color: #c9cfdd;
+    font-weight: 600;
+}
+
+/* Bottom Social Icons */
+.footer-socials {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footer-socials a {
+    color: #ffffff;
+    font-size: 1.15rem;
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.footer-socials a:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .footer-container {
+        padding: 30px 20px;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+
+    .footer-links-grid {
+        gap: 30px;
+    }
+
+    .footer-socials {
+        align-self: flex-start;
+    }
+}
+
+/* Video Hero Section */
+.video-hero {
+    position: relative;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #05060d;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+    z-index: 0;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(16, 26, 47, 0.2) 0%, rgba(3, 5, 12, 0.7) 100%);
+    z-index: 1;
+}
+
+.video-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.hogwarts-hero-logo {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.1));
+}
+
+/* SIGN UP PAGE STYLES */
+
+.signup-body {
+    background: radial-gradient(ellipse at top, #1a1e35 0%, #05060d 70%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.back-btn {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.back-btn:hover {
+    opacity: 1;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hp-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #eed69b;
+    margin-bottom: 20px;
+}
+
+.title-with-lines {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.title-with-lines span {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.title-with-lines h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: #a0a5b5;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.signup-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group label {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    color: #a0a5b5;
+}
+
+.form-group input {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 12px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #5468ff;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.password-wrapper i {
+    position: absolute;
+    right: 12px;
+    color: #a0a5b5;
+    cursor: pointer;
+}
+
+.terms-text {
+    font-size: 0.7rem;
+    color: #7a7f92;
+    line-height: 1.5;
+    margin-top: -5px;
+}
+
+.terms-text a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.btn-full {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.btn-solid-blue {
+    background-color: #6366f1;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-solid-blue:hover {
+    background-color: #4f46e5;
+}
+
+.login-redirect {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.login-redirect p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.change-language {
+    margin-top: 30px;
+    font-size: 0.75rem;
+    color: #a0a5b5;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.change-language i {
+    margin-right: 5px;
+}

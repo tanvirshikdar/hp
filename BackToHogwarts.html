@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Harry Potter | J.K. Rowling Originals</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home/style.css" />
     <!-- Font Awesome for Social & Search Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
@@ -49,16 +49,21 @@
             </ul>
         </nav>
     </header>
-    <!--Hero Section-->
-    <main class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h2>J. K. ROWLING</h2>
-            <h3>ORIGINALS</h3>
-            <p>Explore the inner workings of the magical world with a collection of writtings from J. K. ROWLING</p>
-            <div class="scrol-diamond"></div>
-        </div>
+
+    <!-- Hero Section -->
+    <main class="video-hero">
+        <video autoplay loop muted playsinline class="bg-video">
+            <source src="assets/HogwartsVideo.mp4" type="video/mp4" />
+        </video>
+        <div class="video-overlay"></div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tqqhFtRpnWw?si=dtin6x7PZ0aP6Fpe"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </main>
+
+
+
     <!-- Footer Section -->
     <footer class="site-footer">
         <div class="footer-container">
@@ -117,7 +122,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="home/script.js"></script>
 </body>
 
 </html>
