@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const dob = document.getElementById("dob").value;
             const email = document.getElementById("email").value;
-            const firstName = document.getElementById("firstName").value;
+            const firstName = document.getElementById("firstname").value;
 
             alert(`Welcome to Hogwarts, ${firstName}! \nAn account has been created for ${email}.`);
 
